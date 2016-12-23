@@ -25,5 +25,14 @@
     <PreferenceCategory
         android:title="@string/pref_ad"
         android:key="pref_key_storage_settings">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:title="Instant buy"
+            android:key="switch_preference_1" />
+
+        <Preference
+            android:key="btnDateFilter"
+            android:summary="Pick a date"
+            android:title="Today" />
     </PreferenceCategory>
 </PreferenceScreen>
