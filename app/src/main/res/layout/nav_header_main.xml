@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/side_nav_bar"
@@ -16,7 +17,7 @@
         android:layout_width="88dp"
         android:layout_height="75dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/ic_person_black_24px" />
+        android:src="@android:drawable/btn_star_big_on" />
 
     <TextView
         android:layout_width="fill_parent"
