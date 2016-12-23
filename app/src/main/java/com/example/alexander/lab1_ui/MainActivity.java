@@ -14,6 +14,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.alexander.lab1_ui.dialogs.ExitDialogFragment;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -59,14 +61,21 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_about) {
-            return true;
+        switch (id) {
+            case R.id.action_about:
+                return true;
+             //   break;
+            case R.id.action_buy:
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Ok, just give me a dollar", Toast.LENGTH_SHORT);
+                toast.show();
+                break;
+            case R.id.action_exit:
+                ExitDialogFragment exitDialogFragment = new ExitDialogFragment();
+                exitDialogFragment.show(this.getFragmentManager(), "exit");
+                break;
         }
-        if (id == R.id.action_buy) {
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    "Ok, just give me a dollar", Toast.LENGTH_SHORT);
-            toast.show();
-        }
+
 
         return super.onOptionsItemSelected(item);
     }

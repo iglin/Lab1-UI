@@ -17,4 +17,7 @@
     <string name="mid_to_my_mind">To my mind, the best Android apps excel in two areas: excellence and elegance. An excellent app provides something that no other app can. </string>
     <string name="bot_add">Advertisment from Haulmont!</string>
     <string name="bot_do_you">Do you want to use the best full stack application Framework?</string>
+
+    <string name="exit_title">Exit confirmation</string>
+    <string name="exit_message">Are you sure you want to exit?</string>
 </resources>
