@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.alexander.lab1_ui.dialogs.AboutDialogFragment;
 import com.example.alexander.lab1_ui.dialogs.ExitDialogFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -63,8 +64,9 @@ public class MainActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         switch (id) {
             case R.id.action_about:
-                return true;
-             //   break;
+                AboutDialogFragment dialog = new AboutDialogFragment();
+                dialog.show(this.getFragmentManager(), "about");
+                break;
             case R.id.action_buy:
                 Toast toast = Toast.makeText(getApplicationContext(),
                         "Ok, just give me a dollar", Toast.LENGTH_SHORT);

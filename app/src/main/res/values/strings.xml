@@ -20,4 +20,7 @@
 
     <string name="exit_title">Exit confirmation</string>
     <string name="exit_message">Are you sure you want to exit?</string>
+
+    <string name="about_title">About</string>
+    <string name="about_message">Laboratory work#1 \nAuthor: Iglin A. \nGroup: 6134M \nUniversity: SSAU</string>
 </resources>
