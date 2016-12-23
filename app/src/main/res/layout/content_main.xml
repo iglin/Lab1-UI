@@ -49,7 +49,7 @@
                         android:layout_weight="1">
 
                         <TextView
-                            android:text="TextView"
+                            android:text="@string/top_new_note"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/textView"
@@ -59,7 +59,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPersonName"
-                            android:text="Name"
                             android:ems="10"
                             android:id="@+id/editText" />
                     </LinearLayout>
@@ -67,7 +66,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:text="TextView"
+                    android:text="@string/top_add_notes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView2"
@@ -77,7 +76,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
-                    android:text="Name"
                     android:ems="10"
                     android:id="@+id/editText2" />
 
@@ -100,11 +98,13 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:text="TextView"
+                        android:text="@string/mid_some_cool_news"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView3"
-                        android:layout_weight="2" />
+                        android:layout_weight="2"
+                        android:textStyle="normal|bold"
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -115,7 +115,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:text="TextView"
+                    android:text="@string/mid_to_my_mind"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView4"
@@ -140,11 +140,13 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:text="TextView"
+                        android:text="@string/bot_add"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView5"
-                        android:layout_weight="2" />
+                        android:layout_weight="2"
+                        android:textStyle="normal|bold"
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -154,7 +156,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:text="TextView"
+                    android:text="@string/bot_do_you"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView6"
