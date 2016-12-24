@@ -32,7 +32,7 @@
 
         <Preference
             android:key="btnDateFilter"
-            android:summary="Pick a date"
+            android:summary="11.11.2011"
             android:title="Today" />
     </PreferenceCategory>
 </PreferenceScreen>
