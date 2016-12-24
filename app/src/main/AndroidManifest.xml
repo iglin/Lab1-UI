@@ -24,7 +24,6 @@
 
         <activity
             android:name=".AppsMenuActivity"
-            android:configChanges="orientation|screenSize"
             android:label="Applications" />
     </application>
 

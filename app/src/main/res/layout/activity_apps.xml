@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:padding="9dp"
             android:orientation="horizontal"
-            android:columnCount="4"
+            android:columnCount="@integer/grid_columns"
             android:id="@+id/grid1">
 
             <LinearLayout
@@ -25,15 +25,84 @@
                 android:padding="15dp">
 
                 <ImageView
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    android:layout_width="58dp"
+                    android:layout_height="75dp" />
+
+                <TextView
+                    android:text="Camera"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
                     app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="Gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:text="random"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_slideshow" />
+
+                <TextView
+                    android:text="YouTobe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_manage" />
 
                 <TextView
                     android:text="TextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView8" />
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -42,14 +111,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="@drawable/ic_menu_share" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Share It"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -58,14 +128,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="@android:drawable/checkbox_on_background" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Vote4Me"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -74,14 +145,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="@drawable/ambilwarna_alphacheckered_tiled" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Chess"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -90,14 +162,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="@android:drawable/ic_menu_mylocation" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="GPS"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -106,14 +179,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="@drawable/ambilwarna_target" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Lights"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -122,14 +196,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="@android:drawable/presence_away" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Clock"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -138,14 +213,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="@android:drawable/star_on" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Eggs"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -154,14 +230,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="?android:attr/fingerprintAuthDrawable" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Prints"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -170,14 +247,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="@android:drawable/presence_audio_away" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Mic1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -186,14 +264,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="@android:drawable/presence_audio_online" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Mic2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -202,78 +281,15 @@
                 android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
+                    app:srcCompat="@android:drawable/sym_call_outgoing" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Calls"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="15dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="15dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="15dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="15dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
             </LinearLayout>
         </GridLayout>
 
@@ -282,7 +298,7 @@
             android:layout_width="wrap_content"
             android:padding="9dp"
             android:orientation="horizontal"
-            android:columnCount="4"
+            android:columnCount="@integer/grid_columns"
             android:id="@+id/grid2">
 
             <LinearLayout
@@ -548,7 +564,7 @@
             android:layout_width="wrap_content"
             android:padding="9dp"
             android:orientation="horizontal"
-            android:columnCount="4"
+            android:columnCount="@integer/grid_columns"
             android:id="@+id/grid3">
 
             <LinearLayout

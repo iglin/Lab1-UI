@@ -7,9 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.GridLayout;
-import android.widget.GridView;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 /**
@@ -55,31 +52,38 @@ public class AppsMenuActivity extends AppCompatActivity implements View.OnTouchL
         return true;
     }
 
-    @Override
+  /*  @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
 
         // Checks the orientation of the screen
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             GridLayout gridView = (GridLayout) findViewById(R.id.grid1);
-            gridView.setColumnCount(8);
-            gridView.setPadding(6, 6, 6, 6);
+            gridView.setOrientation(GridLayout.VERTICAL);
+           // gridView.setColumnCount(7);
+            //gridView.setPadding(6, 6, 6, 6);
             gridView = (GridLayout) findViewById(R.id.grid2);
-            gridView.setColumnCount(8);
-            gridView.setPadding(6, 6, 6, 6);
+            gridView.setOrientation(GridLayout.VERTICAL);
+           // gridView.setColumnCount(7);
+           // gridView.setPadding(6, 6, 6, 6);
             gridView = (GridLayout) findViewById(R.id.grid3);
-            gridView.setColumnCount(8);
-            gridView.setPadding(6, 6, 6, 6);
+            //gridView.setColumnCount(7);
+            gridView.setOrientation(GridLayout.VERTICAL);
+         //   gridView.setPadding(6, 6, 6, 6);
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
             GridLayout gridView = (GridLayout) findViewById(R.id.grid1);
-            gridView.setColumnCount(4);
-            gridView.setPadding(9, 9, 9, 9);
+            gridView.setOrientation(GridLayout.HORIZONTAL);
+            //gridView.setColumnCount(4);
+            //gridView.setPadding(9, 9, 9, 9);
             gridView = (GridLayout) findViewById(R.id.grid2);
-            gridView.setColumnCount(4);
-            gridView.setPadding(9, 9, 9, 9);
+            gridView.setOrientation(GridLayout.HORIZONTAL);
+            //gridView.setColumnCount(4);
+            //gridView.setPadding(9, 9, 9, 9);
+            //gridView.setOrientation(GridLayout.VERTICAL);
             gridView = (GridLayout) findViewById(R.id.grid3);
-            gridView.setColumnCount(4);
-            gridView.setPadding(9, 9, 9, 9);
+            gridView.setOrientation(GridLayout.HORIZONTAL);
+            //gridView.setColumnCount(4);
+            //gridView.setPadding(9, 9, 9, 9);
         }
-    }
+    }*/
 }
