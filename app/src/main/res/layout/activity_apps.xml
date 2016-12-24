@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,393 +11,692 @@
         android:id="@+id/viewFlipper">
 
         <GridLayout
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:columnCount="4"
+            android:layout_width="wrap_content"
+            android:padding="9dp"
             android:orientation="horizontal"
-            android:padding="30dp">
+            android:columnCount="4"
+            android:id="@+id/grid1">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
         </GridLayout>
 
         <GridLayout
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:columnCount="4"
+            android:layout_width="wrap_content"
+            android:padding="9dp"
             android:orientation="horizontal"
-            android:padding="30dp">
+            android:columnCount="4"
+            android:id="@+id/grid2">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:id="@+id/imageView8"
-                android:padding="15dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_camera" />
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_camera" />
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_slideshow"
-                android:padding="15dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
 
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
         </GridLayout>
-
 
         <GridLayout
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:columnCount="4"
+            android:layout_width="wrap_content"
+            android:padding="9dp"
             android:orientation="horizontal"
-            android:padding="30dp">
+            android:columnCount="4"
+            android:id="@+id/grid3">
 
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
-            <ImageView
-                android:layout_width="79dp"
-                android:layout_height="75dp"
-                app:srcCompat="@drawable/ic_menu_gallery"
-                android:padding="15dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
         </GridLayout>
+
     </ViewFlipper>
 
 </RelativeLayout>
