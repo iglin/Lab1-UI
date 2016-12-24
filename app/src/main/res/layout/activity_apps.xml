@@ -99,7 +99,7 @@
                     app:srcCompat="@drawable/ic_menu_manage" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Settings"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal" />
@@ -232,7 +232,7 @@
                 <ImageView
                     android:layout_width="58dp"
                     android:layout_height="75dp"
-                    app:srcCompat="?android:attr/fingerprintAuthDrawable" />
+                    app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
                 <TextView
                     android:text="Prints"
@@ -419,11 +419,6 @@
                 android:layout_height="match_parent"
                 android:padding="15dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    app:srcCompat="@drawable/ic_menu_gallery" />
-
                 <TextView
                     android:text="TextView"
                     android:layout_width="match_parent"
@@ -434,6 +429,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_menu_gallery" />
 
                 <ImageView
                     android:layout_width="match_parent"

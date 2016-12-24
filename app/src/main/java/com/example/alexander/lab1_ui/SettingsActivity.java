@@ -1,6 +1,5 @@
 package com.example.alexander.lab1_ui;
 
-import android.annotation.TargetApi;
 import android.app.DatePickerDialog;
 import android.os.Build;
 import android.os.Bundle;
@@ -34,6 +33,9 @@ public class SettingsActivity extends PreferenceActivity implements DatePickerDi
     @Override
     public void onDateSet(DatePicker datePicker, int i, int i2, int i3) {
        // Log.i("dasd","year "+i+" month "+i2+" day "+i3);
+
+        Preference btnDateFilter = (Preference) findPreference("btnDateFilter");
+        btnDateFilter.setSummary(i3 + "." + (++i2) + "." + i);
     }
 
     private void showDateDialog(){
